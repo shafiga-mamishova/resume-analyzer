@@ -8,3 +8,4 @@ def parse(file):
     for page in reader.pages:
         text += page.extract_text()
     print(text)
+    return text
