@@ -20,3 +20,4 @@ if resume is not None:
     if job_text is not None:
         score=round((sim.matching_score(job_text,resume_text))*100)
         st.write(score)
+        st.write(sim.missing_keywords(job_text,resume_text))

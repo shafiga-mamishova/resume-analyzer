@@ -22,7 +22,7 @@ A simple AI-powered tool to help job seekers improve their resumes by:
 
 ## Tech Stack
 - **Languages**: Python 3.11
-- **Libraries**: PyTorch, PyPDF, Sentence Transformers, Streamlit
+- **Libraries**: PyTorch, PyPDF, Sentence Transformers, Streamlit, spaCY
 - **Deployment**:
 
 ## How to Run (coming soon)
