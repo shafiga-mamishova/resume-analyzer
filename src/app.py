@@ -19,5 +19,26 @@ if resume is not None:
     st.success("PDF processed!")
     if job_text is not None:
         score=round((sim.matching_score(job_text,resume_text))*100)
-        st.write(score)
-        st.write(sim.missing_keywords(job_text,resume_text))
+        st.write("Matching score:")
+        st.write(f"{score} %")
+        skills_suggestions,actions_suggestions,missing = sim.suggestion(job_text,resume_text)
+        st.write("**Missing Keywords:**")
+        if missing:
+            # st.write(", ".join(missing))
+            for m in missing:
+                st.write(f"- {m}")
+        else:
+            st.write("No missing keywords")
+        st.subheader("Suggested additions")
+        if skills_suggestions:
+            st.write("**Skills:**")
+            for s in skills_suggestions:
+                st.write(f"- {s}")
+        else:
+            st.write("No suggestions for skills")
+        if actions_suggestions:
+            st.write("**Actions:**")
+            for a in actions_suggestions:
+                st.write(f"- {a}")
+        else:
+            st.write("No  suggestions for actions")
