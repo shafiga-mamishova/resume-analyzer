@@ -13,16 +13,16 @@ A simple AI-powered tool to help job seekers improve their resumes by:
 
 
 ## Planned Features
-- [ ] Upload resume as PDF
-- [ ] Paste job description
+- [x] Upload resume as PDF
+- [x] Paste job description
 - [ ] Keyword extraction
-- [ ] Similarity scoring between job description and resume
+- [x] Similarity scoring between job description and resume
 - [ ] Show missing keywords and suggestions
-- [ ] Streamlit UI for easy interaction
+- [x] Streamlit UI for easy interaction
 
 ## Tech Stack
 - **Languages**: Python 3.11
-- **Libraries**:
+- **Libraries**: PyTorch, PyPDF, Sentence Transformers, Streamlit
 - **Deployment**:
 
 ## How to Run (coming soon)
